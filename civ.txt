@@ -1,0 +1,8 @@
+Questa applicazione si chiama cornigliAPP. Il suo scopo è di promuovere le piccole attività alimentari di Genova Cornigliano.
+L'applicazione serve per guadagnare dei punti quando si compra in questi negozi(ogni euro un punto). Con questi punti, chiamati "cornicoin", puoi riscattare dei premi realizzati dalla scuola
+media Alessandro Volta di Genova Cornigliano.
+Per poter rendere validi i punti devi aver acquistato qualcosa in 5 negozi differenti.
+Per ricevere i punti è sufficiente aprire l'applicazione da cellulare, registrarsi con email e password personali e cliccare sul pulsante rotondo verde in basso al centro.
+Dopo aver cliccato devi inserire l'importo in euro e fare scannerizzare il codice QR al negoziante. Il gioco è fatto! riceverai i tuoi punti.
+L'applicazione è stata progettata dalle scuole: Istituto Tecnico Italo Calvino di Genova Sestri Ponente e scula secondaria Alessandro Volta.
+L'applicazione è stata sviluppata dai ragazzi delle classi del trienni dell' Istituto Tecnico Italo Calvino, specialmente il bellissimo e mitico Diego Signorastri.
