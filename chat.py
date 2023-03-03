@@ -2,7 +2,7 @@ import random
 import json
 import pickle
 import numpy as np
-
+import re
 import nltk
 from nltk.stem import WordNetLemmatizer
 
@@ -18,22 +18,11 @@ words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 model = load_model('chatbot_model.model')
 
-def paraphrase(sentence):
-    words = nltk.word_tokenize(sentence)
-    new_words = []
-    for word in words:
-        synonyms = []
-        for syn in wordnet.synsets(word):
-            for lemma in syn.lemmas():
-                synonyms.append(lemma.name())
-        if synonyms:
-            new_words.append(synonyms[0])
-        else:
-            new_words.append(word)
-    new_sentence = " ".join(new_words)
-    return new_sentence
-#pulisco le frasi
+
+
+# pulisco le frasi
 def clean_up_sentence(sentence):
+    sentence = sentence.lower()
     sentence_words = nltk.word_tokenize(sentence)
     sentence_words = [lemmatizer.lemmatize(word) for word in sentence_words]
     return sentence_words
@@ -50,28 +39,28 @@ def bag_of_words(sentence):
 
 
 def predict_class(sentence):
-    #bag of words
+    # bag of words
     bow = bag_of_words(sentence)
-    #predizione
+    # predizione
     res = model.predict(np.array([bow]))[0]
-    #soglia per cui non prendo le classi
+    # soglia per cui non prendo le classi
     ERROR_THRESHOLD = 0.25
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
-    #ordino in base alla probabilità
+    # ordino in base alla probabilità
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = []
-    #creo un dizionario in cui ogni elemento ha la sua classe e la probabilità
+    # creo un dizionario in cui ogni elemento ha la sua classe e la probabilità
     for r in results:
         return_list.append({'intent': classes[r[0]], "probability": str(r[1])})
     return return_list
 
 
 def get_response(intents_list, intents_json):
-    #prendo il tag con maggiore probabilità
+    # prendo il tag con maggiore probabilità
     tag = intents_list[0]['intent']
-    #prendo gli intenti
+    # prendo gli intenti
     list_of_intents = intents_json['intents']
-    #prendo una risposta a caso di quell'argomento
+    # prendo una risposta a caso di quell'argomento
     for i in list_of_intents:
         if i['tag'] == tag:
             result = random.choice(i['responses'])
@@ -82,5 +71,8 @@ def get_response(intents_list, intents_json):
 while True:
     message = input("<tu>")
     ints = predict_class(message)
-    res = get_response(ints, intents)
-    print(paraphrase(res))
+    if len(ints) != 0:
+        res = get_response(ints, intents)
+    else:
+        res = "sono stupida"
+    print(res)
