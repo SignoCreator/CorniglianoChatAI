@@ -69,5 +69,10 @@
   "tag": "ringraziamenti",
   "patterns": ["grazie","grazie mille","ti ringrazio","è stato utile","ottimo servizio"],
   "responses": ["Grazie a te! Siamo felici di esserti stati utili e di averti fornito tutte le informazioni di cui avevi bisogno."]
-}
+},
+  {
+    "tag": "impostazioni",
+    "patterns": ["dove si trovano le impostazioni","impostazioni","come accedo alle impostazioni","come modifco i miei dati"],
+    "responses": ["nella schermata home, in alto a destra c'è una rotellina, cliccandoci sopra si apre una pagina impostazioni dove è possibile modificare i propri dati, cambiare il colore dell'app e disconnettersi"]
+  }
   ]}
