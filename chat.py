@@ -7,6 +7,9 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 
 from tensorflow.keras.models import load_model
+from nltk.corpus import wordnet
+
+
 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
@@ -15,6 +18,20 @@ words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 model = load_model('chatbot_model.model')
 
+def paraphrase(sentence):
+    words = nltk.word_tokenize(sentence)
+    new_words = []
+    for word in words:
+        synonyms = []
+        for syn in wordnet.synsets(word):
+            for lemma in syn.lemmas():
+                synonyms.append(lemma.name())
+        if synonyms:
+            new_words.append(synonyms[0])
+        else:
+            new_words.append(word)
+    new_sentence = " ".join(new_words)
+    return new_sentence
 #pulisco le frasi
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -66,4 +83,4 @@ while True:
     message = input("<tu>")
     ints = predict_class(message)
     res = get_response(ints, intents)
-    print(res)
+    print(paraphrase(res))
