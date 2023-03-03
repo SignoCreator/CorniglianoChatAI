@@ -65,5 +65,6 @@ def get_response(intents_list, intents_json):
 while True:
     message = input("<tu>")
     ints = predict_class(message)
+    print(str(ints))
     res = get_response(ints, intents)
     print(res)
