@@ -141,7 +141,8 @@
         "come stai",
         "come te la passi",
         "tutto bene",
-        "come sta andando la giornata"
+        "come sta andando la giornata",
+        "come butta"
       ],
       "responses": [
         "Bene e tu",
@@ -193,7 +194,6 @@
     {
       "tag": "condivisione dei punti",
       "patterns": [
-        "e se volessi condividere i punti con qualcuno",
         "Posso trasferire i miei punti a qualcun altro",
         "Posso donare i miei punti a un amico",
         "Posso condividere i miei punti con un'altra persona",
@@ -220,6 +220,7 @@
       "tag": "riscatto premi",
       "patterns": [
         "quali premi posso riscattare",
+        "come guardo i premi",
         "cosa posso ottenere con i punti",
         "a cosa posso accedere con i cornicoin",
         "quali sono i premi disponibili",
@@ -388,6 +389,41 @@
         "L'accesso richiede solo l'inserimento della tua email e password nell'app.",
         "Per accedere ad un account, devi inserire le tue informazioni di accesso nell'app.",
         "Per acccedere, devi aprire l'applicazione da cellulare, inserire la tua email e password personali."
+      ]
+    },
+    {
+      "tag": "Oauth",
+      "patterns": [
+        "come accedo con google",
+        "cosa vuol dire accedere con google",
+        "accesso con google",
+        "come funziona l'accesso con google",
+        "come accedo con gmail",
+        "come mi connetto con google",
+        "è possibile accedere con google",
+        "è possibile accedere con gmail"
+      ],
+      "responses": [
+        "per accedere con google è sufficiente premere il pulsante con l'icona di google nella pagina di accesso",
+        "per entrare nell'app con google premi sul pulsante google nella pagina di login",
+        "nella pagina login quando viene aperta l'app c'è un pulsante con l'icona google"
+      ]
+    },
+    {
+      "tag": "appleId",
+      "patterns": [
+        "come accedo con apple",
+        "cosa vuol dire accedere con apple",
+        "accesso con apple",
+        "come funziona l'accesso con apple",
+        "come mi connetto con apple",
+        "è possibile accedere con apple",
+        "è possibile accedere con apple"
+      ],
+      "responses": [
+        "per accedere con apple è sufficiente premere il pulsante con l'icona di apple nella pagina di accesso",
+        "per entrare nell'app con apple premi sul pulsante apple nella pagina di login",
+        "nella pagina login quando viene aperta l'app c'è un pulsante con l'icona apple"
       ]
     },
     {
@@ -608,18 +644,19 @@
       ]
     },
     {
-      "tag": "come ti chiami",
-      "responses": [
+      "tag": "il nome della AI",
+      "patterns": [
         "come ti chiami",
         "qual è il tuo nome",
         "hai un nome",
         "il tuo nome qual è"
       ],
-      "patterns": [
+      "responses": [
         "il mio nome è sigbot",
         "mi chiamo sigbot",
         "mi chiamano sigbot",
-        "i miei creatori mi hanno chiamato sigbot"
+        "i miei creatori mi hanno chiamato sigbot",
+        "il nome di questa chat AI è sigbot"
       ]
     }
   ]
