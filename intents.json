@@ -1,93 +1,626 @@
 {
-"intents": [
-  {
-  "tag":"saluti",
-  "patterns":["ciao","buongiorno","hey","salve","hey, ciao"],
-  "responses": ["Ciao!","Hey!"]
-  },
+  "intents": [
     {
-  "tag":"bene",
-  "patterns":["bene","male","abbastanza bene","abbastanza bene","vado avanti","si tira avanti"],
-  "responses": ["come posso aiutarti?","posso aiutarti in qualche modo?","ti posso essere utile?","hai bisogno di qualcosa riguardante l'app?"]
-  },
-  {
-  "tag":"domandeCortesia",
-  "patterns":["come stai","come te la passi","tutto bene","come sta andando la giornata"],
-  "responses": ["Bene e tu?","Alla grande!"]
-  },
-  {
-  "tag": "punti",
-  "patterns": ["come funzionano i punti","che cosa sono i punti","spiegami i punti","come faccio a guadagnare punti"],
-  "responses": ["I punti, chiamati 'cornicoin', permettono di riscattare dei premi al raggiungimento di una soglia. Ogni acquisto all'interno di un negozio associato garantisce una corrispondenza in punti. Ogni euro di spesa equivale ad un cornicoin. "]
-  },
+      "tag": "saluti",
+      "patterns": [
+        "ciao",
+        "buongiorno",
+        "hey",
+        "salve",
+        "hey, ciao",
+        "Buondì",
+        "Ben trovato",
+        "Saluti",
+        "Ciao a tutti",
+        "Ciao ragazzi",
+        "Ciao amici",
+        "Ciao cari",
+        "Ciao bellezze",
+        "Ciao tesori",
+        "Ciao meraviglie",
+        "Ciao delizie",
+        "Ciao miei cari",
+        "Ciao amiche e amici",
+        "Ciao amiche",
+        "Ciao amici miei",
+        "Salve a tutti",
+        "Salve cari",
+        "Salve a voi",
+        "Salve amiche e amici",
+        "Salve amici miei",
+        "Eccomi",
+        "Pronto",
+        "Sono qui",
+        "Buon giorno",
+        "Buona giornata",
+        "Buona sera",
+        "Buona notte"
+      ],
+      "responses": [
+        "Ciao!",
+        "Hey!",
+        "Ciao, come posso aiutarti",
+        "Ciao, sono qui per aiutarti.",
+        "Buongiorno! Come posso essere d'aiuto",
+        "Salve, sono qui per rispondere alle tue domande.",
+        "Hey, come posso assisterti",
+        "Ciao, qual è la tua richiesta",
+        "Buongiorno! Di cosa hai bisogno",
+        "Salve, in cosa posso esserti utile",
+        "Hey, dimmi pure cosa ti serve.",
+        "Ciao, mi dica in cosa posso esserle utile.",
+        "Sono qui per rispondere alle tue domande.",
+        "Ciao! Posso aiutarti in qualche modo",
+        "Dimmi pure come posso assisterti.",
+        "Sono a tua disposizione.",
+        "Cosa posso fare per te oggi",
+        "Come posso aiutarti in questa occasione",
+        "Ciao! Non esitare a chiedere il mio aiuto.",
+        "Ciao! Sono qui per renderti il supporto che ti serve.",
+        "Ciao! Mi dica cosa posso fare per renderti la vita più facile.",
+        "Ciao! Come posso fare per renderti il servizio migliore possibile",
+        "Ciao! Non esitare a farmi sapere come posso esserti utile.",
+        "Ciao! Sono qui per aiutare tutti i clienti nel miglior modo possibile.",
+        "Ciao! La mia priorità è soddisfare le esigenze dei miei utenti.",
+        "Ciao! Fammi sapere come posso renderti felice oggi.",
+        "Ciao! Non vedo l'ora di aiutarti a risolvere il tuo problema.",
+        "Ciao! Come posso renderti la vita più semplice oggi, o almeno spero!",
+        "Ciao! Siamo qui per aiutare i nostri clienti in ogni modo possibile.",
+        "Ciao! Se hai bisogno di assistenza, non esitare a contattarmi.",
+        "Ciao! Non vedo l'ora di assisterti nel modo migliore possibile relativamente alle mie capacità."
+      ]
+    },
     {
-  "tag": "premi",
-  "patterns": ["quali premi posso riscattare","cosa posso ottenere con i punti","a cosa posso accedere con i cornicoin","quali sono i premi disponibili"],
-  "responses": ["I premi disponibili per il riscatto sono stati realizzati dalla scuola media Alessandro Volta di Genova Cornigliano. Alcuni esempi di premi sono gadget personalizzati, buoni sconto per negozi associati e ingressi gratuiti a eventi locali."]
-  },
-  {
-  "tag": "raggiungimento soglia",
-  "patterns": ["soglia","quanti punti servono per riscattare un premio","come faccio a sapere quando ho raggiunto la soglia per il riscatto","qual è la soglia per il riscatto dei premi"],
-  "responses": ["La soglia per il riscatto dei premi varia in base al premio scelto. Una volta che hai raggiunto la soglia necessaria, potrai riscattare il premio tramite l'app."]
-  },
-  {
-  "tag": "che cos'è",
-  "patterns": ["che cos'è","che cos'è questa app","a cosa serve questa app","qual è lo scopo di questa app?","come funziona","come funziona questa app","che scopo ha","parlami dell'app","spiegami a cosa serve l'app"],
-  "responses": ["Questa app serve per guadagnare punti e riscattare premi. È stata sviluppata per promuovere le piccole aziende di Cornigliano."]
-  },
-  {
-  "tag": "creazione",
-  "patterns": ["creazione","chi ha progettato l'app","chi l'ha inventata","chi l'ha creata"],
-  "responses": ["L'applicazione è stata progettata dalle classi del triennio dell' Istituto Tecnico Calvino di Genova Sestri Ponente e dalle classi terze dell' Istituto Volta di Genova Cornigliano."]
-  },
-  {
-  "tag": "registrazione",
-  "patterns": ["registrazione","accesso","come faccio a registrarmi","devo registrarmi per usare l'app","quali sono i requisiti per registrarsi","cosa devo fare per registrarmi","ho problemi con la registrazione"],
-  "responses": ["Per registrarti, devi aprire l'applicazione da cellulare, inserire la tua email e password personali e cliccare sul pulsante rotondo verde in basso al centro. In seguito, dovrai inserire l'importo dell'acquisto effettuato in uno dei negozi associati e far scannerizzare il codice QR al negoziante per ricevere i tuoi punti. Se hai problemi con la registrazione, ti consigliamo di contattare il supporto tecnico."]
-  },
-  {
-    "tag": "funzionamento",
-    "patterns": ["funzionamento","come funziona l'app","come si usa l'app","quali sono i passaggi per utilizzare l'app"],
-    "responses": ["Per utilizzare l'app, è sufficiente aprire l'applicazione da cellulare, registrarsi con email e password personali e cliccare sul pulsante rotondo verde in basso al centro. Dopo aver cliccato, devi inserire l'importo in euro e fare scannerizzare il codice QR al negoziante. Il gioco è fatto! Riceverai i tuoi punti."]
-  },
-  {
-    "tag": "negozi",
-    "patterns": ["negozi","quali sono i negozi associati","in quali negozi posso utilizzare l'app","dove posso utilizzare l'app"],
-    "responses": ["L'applicazione serve per promuovere le piccole attività alimentari di Genova Cornigliano. Puoi utilizzarla presso i negozi associati situati in Cornigliano."]
-  },
-  {
-    "tag": "premi",
-    "patterns": ["premi","quali sono i premi disponibili","cosa posso riscattare con i punti","che premi posso ottenere"],
-    "responses": ["I premi disponibili per il riscatto sono stati realizzati dalla scuola media Alessandro Volta di Genova Cornigliano. Per maggiori informazioni sui premi disponibili e sulle soglie di riscatto, ti consigliamo di contattare direttamente la scuola."]
-  },
-  {
-    "tag": "contatti",
-    "patterns": ["contatti","assistenza","come posso contattare l'assistenza","ho bisogno di aiuto","chi posso contattare in caso di problemi","dove posso trovare supporto"],
-    "responses": ["Per qualsiasi problema o dubbio sull'utilizzo dell'app, puoi contattare l'assistenza attraverso l'indirizzo email: assistenza@cornigliapp.it."]
-  },
-  {
-    "tag": "ringraziamenti",
-    "patterns": ["grazie","grazie mille","ti ringrazio","è stato utile","ottimo servizio"],
-    "responses": ["Grazie a te! Siamo felici di esserti stati utili e di averti fornito tutte le informazioni di cui avevi bisogno."]
-  },
-  {
-    "tag": "impostazioni",
-    "patterns": ["impostazioni","dove si trovano le impostazioni","impostazioni","come accedo alle impostazioni","come modifco i miei dati"],
-    "responses": ["nella schermata home, in alto a destra c'è una rotellina, cliccandoci sopra si apre una pagina impostazioni dove è possibile modificare i propri dati, cambiare il colore dell'app e disconnettersi"]
-  },
-  {
-    "tag": "generazione QR code",
-    "patterns": ["codice QR","come faccio un QR","come si genera un codice QR", "dopo che genero il codice QR cosa devo fare"],
-    "responses": ["Dall'applicazione clicca il tasto in basso al centro, inserisci l'importo della spesa e, una volta generato il codice QR, mostralo al negoziante. Riceverai i tuoi punti all'interno dell'applicazione"]
-  },
-  {
-    "tag": "come funziona il codice QR",
-    "patterns": ["come funziona il codice QR","che cos'è il codice QR"],
-    "responses": ["Un codice QR è un tipo di codice a barre bidimensionale che può essere scansionato con la fotocamera di un dispositivo mobile per accedere a informazioni come link web o testo. Viene utilizzato all'interno dell'app per gestire i pagamenti e l'assegnazione dei 'cornicoin'"]
-  },
-  {
-    "tag": "mappa dei negozi",
-    "patterns": ["come vedo la mappa dei negozi","come accedo alla mappa"],
-    "responses": ["per consultare la mappa dei negozi schiaccia sull'icona [TODO AGGIUNGI LA POSIZIONE DELL'ICONA]"]
-  }
-]}
+      "tag": "bene",
+      "patterns": [
+        "bene",
+        "male",
+        "abbastanza bene",
+        "abbastanza bene",
+        "vado avanti",
+        "si tira avanti",
+        "Sto bene grazie per chiedere",
+        "Non potrei stare meglio grazie",
+        "Sono in ottima forma, grazie",
+        "La vita è bella grazie",
+        "Non mi posso lamentare",
+        "Sto abbastanza bene grazie",
+        "Non male, grazie per aver chiesto",
+        "Non proprio al massimo ma ce la metto tutta",
+        "Potrebbe andare meglio ma non mi lamento",
+        "Non ho di che lamentarmi grazie",
+        "Come un re",
+        "Molto bene grazie per aver chiesto",
+        "Non potrei chiedere di meglio grazie",
+        "Non c'è male",
+        "Abbastanza bene grazie per chiedere",
+        "Non c'è problema",
+        "Non sto male",
+        "Sto bene",
+        "Non posso lamentarmi grazie",
+        "Sto bene grazie",
+        "Come un campione",
+        "Sto passando un momento difficile ma mi sto dando da fare",
+        "Non proprio bene ma ce la metto tutta",
+        "Potrebbe andare meglio ma spero che le cose cambino presto",
+        "Non sto passando un momento facile ma ci provo",
+        "Non sto male ma ci sono ancora dei problemi da risolvere",
+        "Sto abbastanza bene ma ci sono alcune difficoltà da affrontare",
+        "Non sto passando un momento felice ma cerco di essere positivo"
+      ],
+      "responses": [
+        "come posso aiutarti",
+        "posso aiutarti in qualche modo",
+        "ti posso essere utile",
+        "hai bisogno di qualcosa riguardante l'app",
+        "In che modo posso assisterti",
+        "Hai bisogno di qualche supporto",
+        "Come posso renderti il servizio migliore possibile",
+        "Cosa posso fare per agevolare la tua situazione",
+        "Di cosa hai bisogno per risolvere il problema",
+        "In cosa posso esserti d'aiuto per raggiungere il tuo obiettivo",
+        "Posso aiutarti a trovare ciò di cui hai bisogno",
+        "Come posso facilitare il tuo lavoro",
+        "Cosa ti serve per completare il progetto",
+        "Posso offrirti qualche soluzione",
+        "Come posso fare per renderti il servizio migliore",
+        "Qual è la tua richiesta",
+        "Come posso migliorare la tua esperienza",
+        "Posso fare qualcosa per semplificare la tua vita",
+        "Cosa posso fare per rendere più facile la tua situazione",
+        "Hai bisogno di qualcosa di specifico",
+        "In cosa posso esserti utile",
+        "Come posso aiutarti a superare questa difficoltà",
+        "Quali sono le tue esigenze",
+        "Posso darti qualche consiglio o suggerimento"
+      ]
+    },
+    {
+      "tag": "domandeCortesia",
+      "patterns": [
+        "come stai",
+        "come te la passi",
+        "tutto bene",
+        "come sta andando la giornata"
+      ],
+      "responses": [
+        "Bene e tu",
+        "Alla grande!"
+      ]
+    },
+    {
+      "tag": "che cosa sono i punti",
+      "patterns": [
+        "Come faccio a usare i miei punti",
+        "Cosa rappresentano i punti",
+        "Di cosa si tratta quando si parla di punti",
+        "Quali sono le funzionalità dei punti",
+        "Cosa si intende per punti",
+        "Qual è lo scopo dei punti",
+        "Che cosa rappresentano i punti nel sistema",
+        "Che cos'è un punto in questa applicazione",
+        "Come vengono utilizzati i punti",
+        "Quali benefici posso ottenere dai punti",
+        "Come posso utilizzare i punti",
+        "Come vengono assegnati i punti",
+        "Quali sono i limiti dei punti",
+        "Possono i punti scadere",
+        "Cosa posso fare con i miei punti"
+      ],
+      "responses": [
+        "I punti, chiamati 'cornicoin', permettono di riscattare dei premi al raggiungimento di una soglia. Ogni acquisto all'interno di un negozio associato garantisce una corrispondenza in punti. Ogni euro di spesa equivale ad un cornicoin. "
+      ]
+    },
+    {
+      "tag": "scandenza punti",
+      "patterns": [
+        "dopo quanto scadono i punti",
+        "scadono i punti",
+        "hanno una scadenza i punti",
+        "hanno una scadenza i cornicoin",
+        "c'è un limite di tempo per usare i punti"
+      ],
+      "responses": [
+        "non c'è un limite di tempo per utilizzare i cornicoin",
+        "non c'è un limite di tempo per utilizzare i punti",
+        "I punti non hanno una scadenza",
+        "Puoi utilizzare i tuoi punti senza alcuna limitazione di tempo",
+        "I punti non scadono mai",
+        "Non hai limiti di tempo per utilizzare i tuoi punti",
+        "Non devi preoccuparti della scadenza dei punti"
+      ]
+    },
+    {
+      "tag": "condivisione dei punti",
+      "patterns": [
+        "e se volessi condividere i punti con qualcuno",
+        "Posso trasferire i miei punti a qualcun altro",
+        "Posso donare i miei punti a un amico",
+        "Posso condividere i miei punti con un'altra persona",
+        "È possibile trasferire i punti accumulati a un'altra persona",
+        "Posso regalare i miei punti a qualcuno",
+        "Posso inviare i miei punti a un altro account",
+        "Come posso dare i miei punti ad un'altra persona",
+        "Posso scambiare i miei punti con un amico",
+        "Posso trasferire i punti a un membro della famiglia",
+        "Posso inviare i miei punti come regalo ad un'altra persona",
+        "Posso condividere i miei punti con amici o familiari",
+        "Posso donare i miei punti a un'organizzazione benefica"
+      ],
+      "responses": [
+        "I punti non sono trasferibili a terze parti. Possono essere utilizzati solo dal possessore dell'account.",
+        "I punti non possono essere donati o trasferiti a un'altra persona.",
+        "I punti sono legati all'account dell'utente e non possono essere dati o venduti ad altri.",
+        "I punti sono una ricompensa personale che può essere utilizzata solo dall'utente che li ha guadagnati.",
+        "I punti sono strettamente personali e non possono essere condivisi con altri utenti.",
+        "I punti sono una forma di ricompensa personale e non possono essere scambiati o regalati ad altri utenti."
+      ]
+    },
+    {
+      "tag": "riscatto premi",
+      "patterns": [
+        "quali premi posso riscattare",
+        "cosa posso ottenere con i punti",
+        "a cosa posso accedere con i cornicoin",
+        "quali sono i premi disponibili",
+        "dove posso vedere i premi",
+        "quanti punti servono per riscattare un premio"
+      ],
+      "responses": [
+        "Puoi trovare i premi che sono riscattabili nella sezione premi del menu.",
+        "La sezione premi del menu è dove puoi trovare i premi che puoi riscattare.",
+        "Troverai i premi che possono essere riscattati nella sezione premi del menu.",
+        "Nella sezione premi del menu sono presenti i premi che puoi riscattare.",
+        "I premi riscattabili sono elencati nella sezione premi del menu."
+      ]
+    },
+    {
+      "tag": "raggiungimento soglia",
+      "patterns": [
+        "a che soglia si possono prendere i premi",
+        "quanti punti servono per riscattare un premio",
+        "come faccio a sapere quando ho raggiunto la soglia per il riscatto",
+        "qual è la soglia per il riscatto dei premi",
+        "quanti punti servono per prendere un premio"
+      ],
+      "responses": [
+        "La soglia di riscatto per i premi dipende dal premio scelto, ma una volta raggiunta potrai riscattarlo tramite l'app.",
+        "Il limite di punti richiesti per riscattare un premio varia in base al premio scelto, ma una volta raggiunto potrai richiederlo tramite l'app.",
+        "Dovrai raggiungere una soglia specifica di punti per riscattare un premio, che varia in base alla scelta del premio. Una volta raggiunta la soglia, potrai riscattare il premio tramite l'app.",
+        "Il numero di punti richiesti per riscattare un premio dipende dal premio stesso. Tuttavia, una volta che avrai raggiunto la soglia necessaria, potrai riscattare il premio tramite l'app.",
+        "La soglia di riscatto per un premio è differente a seconda del premio scelto. Una volta che avrai raggiunto il punteggio necessario, potrai richiedere il premio attraverso l'app."
+      ]
+    },
+    {
+      "tag": "che cos'è",
+      "patterns": [
+        "che cos'è",
+        "che cos'è questa app",
+        "a cosa serve questa app",
+        "qual è lo scopo di questa app",
+        "come funziona",
+        "come funziona questa app",
+        "che scopo ha",
+        "parlami dell'app",
+        "spiegami a cosa serve l'app"
+      ],
+      "responses": [
+        "Questa app serve per guadagnare punti e riscattare premi. È stata sviluppata per promuovere le piccole aziende di Cornigliano.",
+        "questa applicazione permette di guadagnare punti facendo la spesa nei piccoli negozi di cornigliano associati al CIV. Grazie a questi punti puoi riscattare dei premi creati dalla scuola Alessandro Volta!"
+      ]
+    },
+    {
+      "tag": "creazione",
+      "patterns": [
+        "Chi ha ideato l'app",
+        "Chi ha sviluppato l'app",
+        "Chi è il creatore di questa app",
+        "Chi ha programmato l'app",
+        "Chi ha scritto il codice per l'app",
+        "Chi ha disegnato l'interfaccia dell'app",
+        "Chi ha realizzato il design dell'app",
+        "Chi ha progettato l'applicazione",
+        "Chi è il responsabile della creazione dell'app",
+        "Chi ha lavorato sull'applicazione",
+        "Chi ha curato lo sviluppo di questa app",
+        "Chi ha creato l'app",
+        "Chi ha realizzato il software dell'app",
+        "Chi ha messo in piedi questa app",
+        "Chi ha progettato l'architettura dell'applicazione",
+        "Chi ha gestito il progetto di sviluppo dell'app",
+        "Chi ha supervisionato la realizzazione dell'app",
+        "Chi ha ideato il concept dell'applicazione",
+        "Chi ha curato il design dell'applicazione",
+        "Chi è stato il capo progetto dell'app",
+        "Chi ha guidato il team di sviluppo dell'app",
+        "Chi ha concepito l'applicazione",
+        "Chi ha scritto il codice dell'app",
+        "Chi ha creato il database dell'applicazione",
+        "Chi ha fatto il debugging dell'app",
+        "Chi ha curato la parte di sicurezza dell'applicazione",
+        "Chi ha sviluppato la parte back-end dell'app",
+        "Chi ha gestito la parte di testing dell'applicazione",
+        "Chi ha curato la parte di integrazione dell'applicazione",
+        "Chi è stato coinvolto nello sviluppo dell'app",
+        "creazione",
+        "chi ha progettato l'app",
+        "chi l'ha inventata",
+        "chi l'ha creata"
+      ],
+      "responses": [
+        "L'applicazione è stata progettata dalle classi del triennio dell' Istituto Tecnico Calvino di Genova Sestri Ponente e dalle classi terze dell' Istituto Volta di Genova Cornigliano",
+        "Le classi del triennio dell'Istituto Tecnico Calvino di Genova Sestri Ponente e le classi terze dell'Istituto Volta di Genova Cornigliano hanno progettato l'applicazione",
+        "L'applicazione è stata progettata in collaborazione dalle classi del triennio dell'Istituto Tecnico Calvino di Genova Sestri Ponente e dalle classi terze dell'Istituto Volta di Genova Cornigliano",
+        "Sia le classi del triennio dell'Istituto Tecnico Calvino di Genova Sestri Ponente che le classi terze dell'Istituto Volta di Genova Cornigliano hanno collaborato alla progettazione dell'applicazione.",
+        "L'applicazione è stata ideata dalle classi del triennio dell'Istituto Tecnico Calvino di Genova Sestri Ponente e dalle classi terze dell'Istituto Volta di Genova Cornigliano",
+        "La progettazione dell'applicazione è stata condivisa tra le classi del triennio dell'Istituto Tecnico Calvino di Genova Sestri Ponente e le classi terze dell'Istituto Volta di Genova Cornigliano"
+      ]
+    },
+    {
+      "tag": "creazione idea",
+      "patterns": [
+        "da chi è partita l'idea",
+        "come è stata concepita l'app",
+        "come è partita l'idea per la creazione di quest'app",
+        "come avete pensato all'idea per quest'app",
+        "come avete trovato l'idea per quest'app"
+      ],
+      "responses": [
+        "L'idea è partita dalla scuola Alessandro Volta di Cornigliano che, per via del bando del MIUR Saper(e) Consumare, un bando atto ad aiutare l'economia locale"
+      ]
+    },
+    {
+      "tag": "sviluppo chatAI",
+      "patterns": [
+        "chi ha creato l'AI",
+        "chi ha creato questa chat",
+        "chi è che a sviluppato questa chat",
+        "chi ti ha progettato",
+        "chi è il creatore di sigbot"
+      ],
+      "responses":[
+        "il creatore di questa chat funzionante con Intelligenza Artificiale Ristretta è stata creata da quel mostro di Signorastri e il suo compagno Calderaro",
+        "Diego Signorastri e Calderaro Stefano hanno sviluppato questa chat utilizzando tecniche che si possono apprendere all'istituto informatico Italo Calvino di Genova Sestri"
+      ]
+    },
+    {
+      "tag": "registrazione",
+      "patterns": [
+        "Come faccio a creare un account",
+        "Quali passaggi devo seguire per creare un account",
+        "Cosa devo fare per registrarmi",
+        "Come si effettua la registrazione",
+        "Quali informazioni sono richieste per creare un profilo",
+        "Come registro un nuovo account",
+        "Quali sono le istruzioni per registrarsi sull'applicazione",
+        "Come posso accedere alla registrazione",
+        "Come posso registrarmi su questa applicazione",
+        "Quali dati devo inserire per creare un account",
+        "Come si può accedere alla pagina di registrazione",
+        "Come posso creare un account se sono un nuovo utente"
+      ],
+      "responses": [
+        "Per effettuare la registrazione, basta inserire la tua email e password nell'applicazione.",
+        "Per registrarti, devi fornire le tue credenziali personali nell'app.",
+        "La registrazione richiede solo l'inserimento della tua email e password nell'app.",
+        "Per creare un account, devi inserire le tue informazioni di accesso nell'app.",
+        "Per registrarti, devi aprire l'applicazione da cellulare, inserire la tua email e password personali."
+      ]
+    },
+    {
+      "tag": "accesso",
+      "patterns": [
+        "Come faccio ad accedere un account",
+        "Quali passaggi devo seguire per accedere un account",
+        "Cosa devo fare per accedere al mio account",
+        "Come si effettua l'accesso all'applicazione",
+        "Quali informazioni sono richieste per accedere al profilo",
+        "Come accedo al mio account",
+        "Quali sono le istruzioni per accedere sull'applicazione",
+        "Come posso accedere alla pagina di accesso",
+        "Come posso accedere su questa applicazione",
+        "Quali dati devo inserire per accedere un account",
+        "Come si può accedere alla pagina di accesso"
+      ],
+      "responses": [
+        "Per effettuare l'accesso, basta inserire la tua email e password nell'applicazione.",
+        "Per accedere, devi fornire le tue credenziali personali nell'app.",
+        "L'accesso richiede solo l'inserimento della tua email e password nell'app.",
+        "Per accedere ad un account, devi inserire le tue informazioni di accesso nell'app.",
+        "Per acccedere, devi aprire l'applicazione da cellulare, inserire la tua email e password personali."
+      ]
+    },
+    {
+      "tag": "funzionamento",
+      "patterns": [
+        "Come funziona l'app",
+        "Come si usa l'app",
+        "Qual è il funzionamento dell'app",
+        "Quali sono i passaggi necessari per utilizzare l'app",
+        "Che cosa devo fare per utilizzare l'app",
+        "Quali sono le istruzioni per usare l'app",
+        "In cosa consiste l'utilizzo dell'app",
+        "Come posso utilizzare l'app",
+        "Come è strutturata l'app e come posso utilizzarla",
+        "Quali sono le funzioni disponibili nell'app",
+        "Cosa devo sapere per utilizzare l'app",
+        "Come si può interagire con l'app",
+        "Come si può accedere alle diverse funzioni dell'app",
+        "Che cosa offre l'app e come posso utilizzare queste funzionalità"
+      ],
+      "responses": [
+        "Per utilizzare l'app, devi prima aprire l'applicazione sul tuo cellulare. Dovrai poi registrarti utilizzando la tua email e una password personale. Una volta effettuata la registrazione, premi il pulsante verde rotondo in basso al centro dell'app. Successivamente, dovrai inserire l'importo in euro e scannerizzare il codice QR del negoziante. Una volta fatto questo, i punti saranno accreditati sul tuo conto.",
+        "Per utilizzare l'app, devi aprirla sul tuo cellulare e procedere con la registrazione utilizzando i tuoi dati personali. Dopodiché, premi sul pulsante verde rotondo in basso al centro dell'app e inserisci l'importo in euro che vuoi utilizzare. Infine, scannerizza il codice QR del negoziante per ricevere i punti sul tuo conto.",
+        "Per utilizzare l'app, devi prima aprire l'applicazione sul tuo cellulare e registrarti utilizzando la tua email e una password personale. Dopo la registrazione, fai clic sul pulsante verde rotondo in basso al centro dell'app, inserisci l'importo in euro e scannerizza il codice QR del negoziante. Infine, i tuoi punti saranno accreditati sul tuo conto.",
+        "Per utilizzare l'app, devi aprire l'applicazione sul tuo cellulare e registrarti utilizzando i tuoi dati personali. Dopo la registrazione, fai clic sul pulsante verde rotondo in basso al centro dell'app e inserisci l'importo in euro. A questo punto, scannerizza il codice QR del negoziante e i tuoi punti saranno accreditati sul tuo conto.",
+        "Per utilizzare l'app, è necessario aprirla sul proprio cellulare e procedere con la registrazione inserendo i propri dati personali. Una volta registrati, fare clic sul pulsante verde rotondo in basso al centro dell'app, quindi inserire l'importo in euro e scannerizzare il codice QR del negoziante. Infine, i punti saranno accreditati sul conto dell'utente."
+      ]
+    },
+    {
+      "tag": "negozi",
+      "patterns": [
+        "negozi",
+        "quali sono i negozi associati",
+        "in quali negozi posso utilizzare l'app",
+        "dove posso utilizzare l'app",
+        "quali sono i punti vendita che accettano l'app",
+        "dove sono disponibili i punti vendita che accettano l'app",
+        "quali sono i negozi che accettano i pagamenti tramite l'app",
+        "dove posso trovare i negozi associati all'app",
+        "quali sono i negozi dove posso utilizzare l'app",
+        "voglio vedere un negozio",
+        "quali sono i punti vendita dove posso utilizzare l'app"
+      ],
+      "responses": [
+        "La lista dei negozi associati è disponibile nella sezione apposita dell'applicazione",
+        "Puoi trovare l'elenco completo dei negozi aderenti nell'app nella sezione 'negozi'",
+        "La sezione negozi dell'applicazione contiene l'elenco dei negozi aderenti all'iniziativa",
+        "Per sapere quali sono i negozi associati all'app, devi aprire l'applicazione e accedere alla sezione 'negozi'",
+        "Tutti i negozi associati sono visualizzabili nella sezione dedicata all'interno dell'app",
+        "Per sapere dove utilizzare l'app, basta guardare la lista dei negozi aderenti presente nell'app",
+        "Puoi trovare l'elenco completo dei punti vendita che accettano l'app nella sezione 'negozi' dell'applicazione",
+        "Nella sezione 'negozi' dell'app puoi trovare l'elenco completo dei negozi che accettano i pagamenti tramite l'app",
+        "Per sapere in quali negozi puoi utilizzare l'app, devi controllare la sezione 'negozi' dell'applicazione",
+        "La sezione 'negozi' dell'applicazione contiene l'elenco completo dei punti vendita aderenti all'iniziativa",
+        "L'elenco dei negozi associati all'iniziativa è disponibile nella sezione dedicata all'interno dell'app",
+        "Per trovare la lista dei negozi aderenti, basta accedere alla sezione 'negozi' dell'applicazione"
+      ]
+    },
+    {
+      "tag": "premi",
+      "patterns": [
+        "premi",
+        "quali sono i premi disponibili",
+        "come visualizzo i premi disponibili",
+        "come faccio a capire se posso riscattare un premio",
+        "quanto costa un premio",
+        "cosa posso riscattare con i punti",
+        "che premi posso ottenere"
+      ],
+      "responses": [
+        "i premi riscattabili si trovano nella sezione premi del menu in basso. Se possiedi sufficienti punti potrai riscattare il premio e ti verranno detratti i punti corrispondenti.",
+        "Se possiedi sufficienti punti potrai riscattare il premio. Se ti interessa sapere quali premi puoi ottenere guarda la sezione del menu premi!"
+      ]
+    },
+    {
+      "tag": "contatti",
+      "patterns": [
+        "contatti",
+        "assistenza",
+        "come posso contattare l'assistenza",
+        "ho bisogno di aiuto",
+        "chi posso contattare in caso di problemi",
+        "dove posso trovare supporto"
+      ],
+      "responses": [
+        "Per qualsiasi problema o dubbio sull'utilizzo dell'app, puoi contattare l'assistenza attraverso l'indirizzo email: assistenza@cornigliapp.it."
+      ]
+    },
+    {
+      "tag": "ringraziamenti",
+      "patterns": [
+        "grazie",
+        "grazie mille",
+        "ti ringrazio",
+        "è stato utile",
+        "ottimo servizio"
+      ],
+      "responses": [
+        "Grazie a te! Siamo felici di esserti stati utili e di averti fornito tutte le informazioni di cui avevi bisogno."
+      ]
+    },
+    {
+      "tag": "impostazioni",
+      "patterns": [
+        "impostazioni",
+        "dove si trovano le impostazioni",
+        "come trovo le impostazioni",
+        "come accedo alle impostazioni",
+        "come modifico i miei dati",
+        "dimmi dove si trovano le impostazioni",
+        "esiste una sezione impostazioni"
+      ],
+      "responses": [
+        "nella schermata home, in alto a destra c'è una rotellina, cliccandoci sopra si apre una pagina impostazioni dove è possibile modificare i propri dati, cambiare il colore dell'app e disconnettersi",
+        "nella home, in alto a destra, c'è l'icona delle impostazioni. Qui è possibile modificare i propri dati."
+      ]
+    },
+    {
+      "tag": "password dimenticata",
+      "patterns": [
+        "ho dimenticato la password",
+        "non mi ricordo la password",
+        "come recupero la mia password",
+        "ho scordato la password come faccio a recuperarla",
+        "come si recupera la propria password",
+        "ho smarrito la password",
+        "non ricordo la mia password"
+      ],
+      "responses": [
+        "se hai dimenticato la password non ti preoccupare, puoi richiedere di cambiarla inserendo la mail con cui hai acceduto nella sezione del login 'password dimenticata'. Ad essa verrà inviato un link per cambiare la propria password",
+        "puoi richiedere di cambiarla inserendo la mail con cui hai acceduto. Ad essa verrà inviato un link per cambiare la propria password",
+        "la password è recuperabile tramite la propria email. Cliccando nel login su 'password dimenticata' verrà chiesto di inserire la propria email a cui verrà inviato il link di cambio password"
+      ]
+    },
+    {
+      "tag": "generazione QR code",
+      "patterns": [
+        "come faccio a creare il codice qr",
+        "come faccio un qr",
+        "come faccio un codice",
+        "come si genera un codice qr",
+        "dopo che genero il codice qr cosa devo fare"
+      ],
+      "responses": [
+        "Dall'applicazione clicca il tasto in basso al centro, inserisci l'importo della spesa e, una volta generato il codice QR, mostralo al negoziante. Riceverai i tuoi punti all'interno dell'applicazione",
+        "Premi sul tasto centrale nel menu in basso, verrà aperta una pagina in cui inserire l'importo della spesa in euro, dopo averlo inserito verrà generata un immagine automaticamente contenente una specie di quadrato(il codice QR!). Mostra il cellulare al negoziante e il gioco è fatto! Riceverai immediatamente i tuoi punti."
+      ]
+    },
+    {
+      "tag": "come funziona il codice qr",
+      "patterns": [
+        "come funziona il codice qr",
+        "che cos'è il codice qr",
+        "che c'è il qr code",
+        "a cosa serve il qr code",
+        "cos'è un qr",
+        "cosa è un qr",
+        "che tipo di codice è il qr"
+      ],
+      "responses": [
+        "Un codice QR è un tipo di codice a barre bidimensionale che può essere scansionato con la fotocamera di un dispositivo mobile per accedere a informazioni come link web o testo. Viene utilizzato all'interno dell'app per gestire i pagamenti e l'assegnazione dei 'cornicoin'",
+        "Il codice QR è un immagine che serve per passare informazioni tra dispositivi. Nel caso dell'applicazione viene usato per validare un pagamento!"
+      ]
+    },
+    {
+      "tag": "mappa dei negozi",
+      "patterns": [
+        "come vedo la mappa dei negozi",
+        "come accedo alla mappa",
+        "esiste una mappa dei negozi",
+        "dove si trova la mappa dei negozi",
+        "c'è una mappa di google maps con i negozi",
+        "dove posso cercare dove si trovano i negozi"
+      ],
+      "responses": [
+        "per consultare la mappa dei negozi schiaccia sull'icona [TODO AGGIUNGI LA POSIZIONE DELL'ICONA] oppure sul sito web www.corni.com/maps",
+        "la mappa dei negozi è disponibile nella sezione x oppure sul sito web www.corni.com/maps"
+      ]
+    },
+    {
+      "tag": "è a pagamento",
+      "patterns": [
+        "devo pagare per usare l'app",
+        "quanto costa l'app",
+        "è a pagamento l'app",
+        "ha un costo l'applicazione",
+        "quanto costa",
+        "quanto devo pagare per usare l'app",
+        "è gratis l'app",
+        "l'app è gratis",
+        "quanto devo spendere per usare l'app",
+        "ma l'applicazione è gratuita"
+      ],
+      "responses": [
+        "l'app è totalmente gratuita",
+        "non bisogna spendere nulla per usare l'app, è stata creata per aiutarvi!",
+        "l'app è gratuita",
+        "non devi spendere neanche un euro per usare l'app!"
+      ]
+    },
+    {
+      "tag": "download",
+      "patterns": [
+        "come scarico l'applicazione",
+        "da dove scarico l'applicazione",
+        "su quali dispositivi è disponibile l'applicazione",
+        "è disponibile su iphone",
+        "è disponibile su android",
+        "è disponibile sul mio cellulare",
+        "scarica l'applicazione",
+        "scarica l'applicazione per favore",
+        "scarica l'app",
+        "come si scarica l'applicazione"
+      ],
+      "responses": [
+        "l'app è disponibile su ogni dispositivo. Clicca il link sul sito web www.CorniCoin.com per installarla oppure fallo direttamente dal App store o Google Play Store",
+        "l'app è disponibile su ogni dispositivo su App store o Google Play Store oppure cliccando il link sul sito web www.CorniCoin.com"
+      ]
+    },
+    {
+      "tag": "come ti chiami",
+      "responses": [
+        "come ti chiami",
+        "qual è il tuo nome",
+        "hai un nome",
+        "il tuo nome qual è"
+      ],
+      "patterns": [
+        "il mio nome è sigbot",
+        "mi chiamo sigbot",
+        "mi chiamano sigbot",
+        "i miei creatori mi hanno chiamato sigbot"
+      ]
+    }
+  ]
+}
