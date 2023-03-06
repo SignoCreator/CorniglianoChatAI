@@ -40,7 +40,7 @@ def predict_class(sentence):
     # predizione
     res = model.predict(np.array([bow]))[0]
     # soglia per cui non prendo le classi
-    ERROR_THRESHOLD = 0.70
+    ERROR_THRESHOLD = 0.90
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
     # ordino in base alla probabilità
     results.sort(key=lambda x: x[1], reverse=True)
