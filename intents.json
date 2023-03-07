@@ -50,25 +50,24 @@
         "Hey, dimmi pure cosa ti serve.",
         "Ciao, mi dica in cosa posso esserle utile.",
         "Sono qui per rispondere alle tue domande.",
-        "Posso aiutarti in qualche modo",
+        "Ciao! Posso aiutarti in qualche modo",
         "Dimmi pure come posso assisterti.",
         "Sono a tua disposizione.",
         "Cosa posso fare per te oggi",
         "Come posso aiutarti in questa occasione",
-        "Non esitare a chiedere il mio aiuto.",
-        "Sono qui per renderti il supporto che ti serve.",
-        "Mi dica cosa posso fare per renderti la vita più facile.",
-        "Come posso fare per renderti il servizio migliore possibile",
-        "Non esitare a farmi sapere come posso esserti utile.",
-        "Sono qui per aiutare tutti i clienti nel miglior modo possibile.",
-        "La mia priorità è soddisfare le esigenze dei miei utenti.",
-        "Fammi sapere come posso renderti felice oggi.",
-        "Non vedo l'ora di aiutarti a risolvere il tuo problema.",
-        "Come posso renderti la vita più semplice oggi",
-        "Siamo qui per aiutare i nostri clienti in ogni modo possibile.",
-        "Se hai bisogno di assistenza, non esitare a contattarmi.",
-        "Ti garantisco il mio miglior supporto possibile.",
-        "Non vedo l'ora di assisterti nel modo migliore possibile."
+        "Ciao! Non esitare a chiedere il mio aiuto.",
+        "Ciao! Sono qui per renderti il supporto che ti serve.",
+        "Ciao! Mi dica cosa posso fare per renderti la vita più facile.",
+        "Ciao! Come posso fare per renderti il servizio migliore possibile",
+        "Ciao! Non esitare a farmi sapere come posso esserti utile.",
+        "Ciao! Sono qui per aiutare tutti i clienti nel miglior modo possibile.",
+        "Ciao! La mia priorità è soddisfare le esigenze dei miei utenti.",
+        "Ciao! Fammi sapere come posso renderti felice oggi.",
+        "Ciao! Non vedo l'ora di aiutarti a risolvere il tuo problema.",
+        "Ciao! Come posso renderti la vita più semplice oggi, o almeno spero!",
+        "Ciao! Siamo qui per aiutare i nostri clienti in ogni modo possibile.",
+        "Ciao! Se hai bisogno di assistenza, non esitare a contattarmi.",
+        "Ciao! Non vedo l'ora di assisterti nel modo migliore possibile relativamente alle mie capacità."
       ]
     },
     {
@@ -142,7 +141,8 @@
         "come stai",
         "come te la passi",
         "tutto bene",
-        "come sta andando la giornata"
+        "come sta andando la giornata",
+        "come butta"
       ],
       "responses": [
         "Bene e tu",
@@ -152,6 +152,7 @@
     {
       "tag": "che cosa sono i punti",
       "patterns": [
+        "Come faccio a usare i miei punti",
         "Cosa rappresentano i punti",
         "Di cosa si tratta quando si parla di punti",
         "Quali sono le funzionalità dei punti",
@@ -219,6 +220,7 @@
       "tag": "riscatto premi",
       "patterns": [
         "quali premi posso riscattare",
+        "come guardo i premi",
         "cosa posso ottenere con i punti",
         "a cosa posso accedere con i cornicoin",
         "quali sono i premi disponibili",
@@ -264,7 +266,8 @@
         "spiegami a cosa serve l'app"
       ],
       "responses": [
-        "Questa app serve per guadagnare punti e riscattare premi. È stata sviluppata per promuovere le piccole aziende di Cornigliano."
+        "Questa app serve per guadagnare punti e riscattare premi. È stata sviluppata per promuovere le piccole aziende di Cornigliano.",
+        "questa applicazione permette di guadagnare punti facendo la spesa nei piccoli negozi di cornigliano associati al CIV. Grazie a questi punti puoi riscattare dei premi creati dalla scuola Alessandro Volta!"
       ]
     },
     {
@@ -315,6 +318,33 @@
       ]
     },
     {
+      "tag": "creazione idea",
+      "patterns": [
+        "da chi è partita l'idea",
+        "come è stata concepita l'app",
+        "come è partita l'idea per la creazione di quest'app",
+        "come avete pensato all'idea per quest'app",
+        "come avete trovato l'idea per quest'app"
+      ],
+      "responses": [
+        "L'idea è partita dalla scuola Alessandro Volta di Cornigliano che, per via del bando del MIUR Saper(e) Consumare, un bando atto ad aiutare l'economia locale"
+      ]
+    },
+    {
+      "tag": "sviluppo chatAI",
+      "patterns": [
+        "chi ha creato l'AI",
+        "chi ha creato questa chat",
+        "chi è che a sviluppato questa chat",
+        "chi ti ha progettato",
+        "chi è il creatore di sigbot"
+      ],
+      "responses":[
+        "il creatore di questa chat funzionante con Intelligenza Artificiale Ristretta è stata creata da quel mostro di Signorastri e il suo compagno Calderaro",
+        "Diego Signorastri e Calderaro Stefano hanno sviluppato questa chat utilizzando tecniche che si possono apprendere all'istituto informatico Italo Calvino di Genova Sestri"
+      ]
+    },
+    {
       "tag": "registrazione",
       "patterns": [
         "Come faccio a creare un account",
@@ -362,6 +392,41 @@
       ]
     },
     {
+      "tag": "Oauth",
+      "patterns": [
+        "come accedo con google",
+        "cosa vuol dire accedere con google",
+        "accesso con google",
+        "come funziona l'accesso con google",
+        "come accedo con gmail",
+        "come mi connetto con google",
+        "è possibile accedere con google",
+        "è possibile accedere con gmail"
+      ],
+      "responses": [
+        "per accedere con google è sufficiente premere il pulsante con l'icona di google nella pagina di accesso",
+        "per entrare nell'app con google premi sul pulsante google nella pagina di login",
+        "nella pagina login quando viene aperta l'app c'è un pulsante con l'icona google"
+      ]
+    },
+    {
+      "tag": "appleId",
+      "patterns": [
+        "come accedo con apple",
+        "cosa vuol dire accedere con apple",
+        "accesso con apple",
+        "come funziona l'accesso con apple",
+        "come mi connetto con apple",
+        "è possibile accedere con apple",
+        "è possibile accedere con apple"
+      ],
+      "responses": [
+        "per accedere con apple è sufficiente premere il pulsante con l'icona di apple nella pagina di accesso",
+        "per entrare nell'app con apple premi sul pulsante apple nella pagina di login",
+        "nella pagina login quando viene aperta l'app c'è un pulsante con l'icona apple"
+      ]
+    },
+    {
       "tag": "funzionamento",
       "patterns": [
         "Come funziona l'app",
@@ -399,6 +464,7 @@
         "quali sono i negozi che accettano i pagamenti tramite l'app",
         "dove posso trovare i negozi associati all'app",
         "quali sono i negozi dove posso utilizzare l'app",
+        "voglio vedere un negozio",
         "quali sono i punti vendita dove posso utilizzare l'app"
       ],
       "responses": [
@@ -421,11 +487,15 @@
       "patterns": [
         "premi",
         "quali sono i premi disponibili",
+        "come visualizzo i premi disponibili",
+        "come faccio a capire se posso riscattare un premio",
+        "quanto costa un premio",
         "cosa posso riscattare con i punti",
         "che premi posso ottenere"
       ],
       "responses": [
-        "I premi disponibili per il riscatto sono stati realizzati dalla scuola media Alessandro Volta di Genova Cornigliano. Per maggiori informazioni sui premi disponibili e sulle soglie di riscatto, ti consigliamo di contattare direttamente la scuola."
+        "i premi riscattabili si trovano nella sezione premi del menu in basso. Se possiedi sufficienti punti potrai riscattare il premio e ti verranno detratti i punti corrispondenti.",
+        "Se possiedi sufficienti punti potrai riscattare il premio. Se ti interessa sapere quali premi puoi ottenere guarda la sezione del menu premi!"
       ]
     },
     {
@@ -460,44 +530,133 @@
       "patterns": [
         "impostazioni",
         "dove si trovano le impostazioni",
-        "impostazioni",
+        "come trovo le impostazioni",
         "come accedo alle impostazioni",
-        "come modifco i miei dati"
+        "come modifico i miei dati",
+        "dimmi dove si trovano le impostazioni",
+        "esiste una sezione impostazioni"
       ],
       "responses": [
-        "nella schermata home, in alto a destra c'è una rotellina, cliccandoci sopra si apre una pagina impostazioni dove è possibile modificare i propri dati, cambiare il colore dell'app e disconnettersi"
+        "nella schermata home, in alto a destra c'è una rotellina, cliccandoci sopra si apre una pagina impostazioni dove è possibile modificare i propri dati, cambiare il colore dell'app e disconnettersi",
+        "nella home, in alto a destra, c'è l'icona delle impostazioni. Qui è possibile modificare i propri dati."
+      ]
+    },
+    {
+      "tag": "password dimenticata",
+      "patterns": [
+        "ho dimenticato la password",
+        "non mi ricordo la password",
+        "come recupero la mia password",
+        "ho scordato la password come faccio a recuperarla",
+        "come si recupera la propria password",
+        "ho smarrito la password",
+        "non ricordo la mia password"
+      ],
+      "responses": [
+        "se hai dimenticato la password non ti preoccupare, puoi richiedere di cambiarla inserendo la mail con cui hai acceduto nella sezione del login 'password dimenticata'. Ad essa verrà inviato un link per cambiare la propria password",
+        "puoi richiedere di cambiarla inserendo la mail con cui hai acceduto. Ad essa verrà inviato un link per cambiare la propria password",
+        "la password è recuperabile tramite la propria email. Cliccando nel login su 'password dimenticata' verrà chiesto di inserire la propria email a cui verrà inviato il link di cambio password"
       ]
     },
     {
       "tag": "generazione QR code",
       "patterns": [
-        "codice QR",
-        "come faccio un QR",
-        "come si genera un codice QR",
-        "dopo che genero il codice QR cosa devo fare"
+        "come faccio a creare il codice qr",
+        "come faccio un qr",
+        "come faccio un codice",
+        "come si genera un codice qr",
+        "dopo che genero il codice qr cosa devo fare"
       ],
       "responses": [
-        "Dall'applicazione clicca il tasto in basso al centro, inserisci l'importo della spesa e, una volta generato il codice QR, mostralo al negoziante. Riceverai i tuoi punti all'interno dell'applicazione"
+        "Dall'applicazione clicca il tasto in basso al centro, inserisci l'importo della spesa e, una volta generato il codice QR, mostralo al negoziante. Riceverai i tuoi punti all'interno dell'applicazione",
+        "Premi sul tasto centrale nel menu in basso, verrà aperta una pagina in cui inserire l'importo della spesa in euro, dopo averlo inserito verrà generata un immagine automaticamente contenente una specie di quadrato(il codice QR!). Mostra il cellulare al negoziante e il gioco è fatto! Riceverai immediatamente i tuoi punti."
       ]
     },
     {
-      "tag": "come funziona il codice QR",
+      "tag": "come funziona il codice qr",
       "patterns": [
-        "come funziona il codice QR",
-        "che cos'è il codice QR"
+        "come funziona il codice qr",
+        "che cos'è il codice qr",
+        "che c'è il qr code",
+        "a cosa serve il qr code",
+        "cos'è un qr",
+        "cosa è un qr",
+        "che tipo di codice è il qr"
       ],
       "responses": [
-        "Un codice QR è un tipo di codice a barre bidimensionale che può essere scansionato con la fotocamera di un dispositivo mobile per accedere a informazioni come link web o testo. Viene utilizzato all'interno dell'app per gestire i pagamenti e l'assegnazione dei 'cornicoin'"
+        "Un codice QR è un tipo di codice a barre bidimensionale che può essere scansionato con la fotocamera di un dispositivo mobile per accedere a informazioni come link web o testo. Viene utilizzato all'interno dell'app per gestire i pagamenti e l'assegnazione dei 'cornicoin'",
+        "Il codice QR è un immagine che serve per passare informazioni tra dispositivi. Nel caso dell'applicazione viene usato per validare un pagamento!"
       ]
     },
     {
       "tag": "mappa dei negozi",
       "patterns": [
         "come vedo la mappa dei negozi",
-        "come accedo alla mappa"
+        "come accedo alla mappa",
+        "esiste una mappa dei negozi",
+        "dove si trova la mappa dei negozi",
+        "c'è una mappa di google maps con i negozi",
+        "dove posso cercare dove si trovano i negozi"
       ],
       "responses": [
-        "per consultare la mappa dei negozi schiaccia sull'icona [TODO AGGIUNGI LA POSIZIONE DELL'ICONA]"
+        "per consultare la mappa dei negozi schiaccia sull'icona [TODO AGGIUNGI LA POSIZIONE DELL'ICONA] oppure sul sito web www.corni.com/maps",
+        "la mappa dei negozi è disponibile nella sezione x oppure sul sito web www.corni.com/maps"
+      ]
+    },
+    {
+      "tag": "è a pagamento",
+      "patterns": [
+        "devo pagare per usare l'app",
+        "quanto costa l'app",
+        "è a pagamento l'app",
+        "ha un costo l'applicazione",
+        "quanto costa",
+        "quanto devo pagare per usare l'app",
+        "è gratis l'app",
+        "l'app è gratis",
+        "quanto devo spendere per usare l'app",
+        "ma l'applicazione è gratuita"
+      ],
+      "responses": [
+        "l'app è totalmente gratuita",
+        "non bisogna spendere nulla per usare l'app, è stata creata per aiutarvi!",
+        "l'app è gratuita",
+        "non devi spendere neanche un euro per usare l'app!"
+      ]
+    },
+    {
+      "tag": "download",
+      "patterns": [
+        "come scarico l'applicazione",
+        "da dove scarico l'applicazione",
+        "su quali dispositivi è disponibile l'applicazione",
+        "è disponibile su iphone",
+        "è disponibile su android",
+        "è disponibile sul mio cellulare",
+        "scarica l'applicazione",
+        "scarica l'applicazione per favore",
+        "scarica l'app",
+        "come si scarica l'applicazione"
+      ],
+      "responses": [
+        "l'app è disponibile su ogni dispositivo. Clicca il link sul sito web www.CorniCoin.com per installarla oppure fallo direttamente dal App store o Google Play Store",
+        "l'app è disponibile su ogni dispositivo su App store o Google Play Store oppure cliccando il link sul sito web www.CorniCoin.com"
+      ]
+    },
+    {
+      "tag": "il nome della AI",
+      "patterns": [
+        "come ti chiami",
+        "qual è il tuo nome",
+        "hai un nome",
+        "il tuo nome qual è"
+      ],
+      "responses": [
+        "il mio nome è sigbot",
+        "mi chiamo sigbot",
+        "mi chiamano sigbot",
+        "i miei creatori mi hanno chiamato sigbot",
+        "il nome di questa chat AI è sigbot"
       ]
     }
   ]

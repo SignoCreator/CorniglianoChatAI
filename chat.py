@@ -7,6 +7,20 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 
 from tensorflow.keras.models import load_model
+from nltk.corpus import wordnet
+
+
+class printer:
+    reset = "\u001b[0m"
+    black = "\u001b[30m"
+    red = "\u001b[31m"
+    green = "\u001b[32m"
+    yellow = "\u001b[33m"
+    blue = "\u001b[34m"
+    magenta = "\u001b[35m"
+    cyan = "\u001b[36m"
+    white = "\u001b[37m"
+
 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
@@ -40,14 +54,15 @@ def predict_class(sentence):
     # predizione
     res = model.predict(np.array([bow]))[0]
     # soglia per cui non prendo le classi
-    ERROR_THRESHOLD = 0.25
+    ERROR_THRESHOLD = 0.90
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
+
     # ordino in base alla probabilità
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = []
     # creo un dizionario in cui ogni elemento ha la sua classe e la probabilità
-    for r in results:
-        return_list.append({'intent': classes[r[0]], "probability": str(r[1])})
+    for result in results:
+        return_list.append({'intent': classes[result[0]], "probability": str(result[1])})
     return return_list
 
 
@@ -64,8 +79,6 @@ def get_response(intents_list, intents_json):
     return result
 
 
-#while True:
- #   message = input("<tu>")
 
   #  ints = predict_class(message)
  #   if len(ints) != 0:
@@ -80,5 +93,10 @@ def chat(message):
     if len(ints) != 0:
         res = get_response(ints, intents)
     else:
+<<<<<<< HEAD
         res = "sonon stupida"
     return res
+=======
+        res = "scusami, non sono in grado di darti una risposta che possa essere soddisfacente, prova a riformula la domanda oppure contatta i miei creatori."
+    print(printer.green+"<sigbot>"+printer.reset + res)
+>>>>>>> a3fd712e0ff81b39becb9d9284400898aa5e2da1

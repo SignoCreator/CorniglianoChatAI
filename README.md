@@ -19,7 +19,7 @@ neural network trained with data.
 ### Data
 
 It's important to write a good answers-responses file with a correct logic.  
-Each answer and answer is stored in a tag(like an argument).
+Each answer and response is stored in a tag( like an argument).
 Each answer can have more responses.
 The perfect intent is structured like this:\
 `
@@ -31,10 +31,10 @@ The perfect intent is structured like this:\
 
 #### Tokenization and Lemmatization
 
-Every single phrase on input and on the database will be tokenized, that's mean
+Every single phrase on input and on the database will be tokenized, that means
 that phrases will be divided in words.  
-Every single will be lemmatized, that's mean that the word will be processed and reduced to its canonical form.
-With the lemmatization, with this it is customary to also remove the forbidden characters.
+Every single word will be lemmatized, that means that the word will be processed and reduced to its canonical form.
+With the lemmatization is common to also remove the forbidden characters.
 
 Code : 
 - Implement a lemmatizer :  
@@ -50,8 +50,8 @@ Code :
 ---
 ### Training
 
-This a crucial part of the code, because is fundamental.
-We have to save data dividing in inputs and outputs.
+This is a crucial part of the code, because it is responsible for output.
+we have to save the data by separating the data into input and output.
 
 We have to store into an array named words every word in answers of intents.(row 25-45)
 After we can prepare the training array, containing train_x(input) and train_y(output).  
