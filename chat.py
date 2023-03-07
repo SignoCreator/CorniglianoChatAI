@@ -64,12 +64,21 @@ def get_response(intents_list, intents_json):
     return result
 
 
-while True:
-    message = input("<tu>")
+#while True:
+ #   message = input("<tu>")
 
+  #  ints = predict_class(message)
+ #   if len(ints) != 0:
+ #       res = get_response(ints, intents)
+ #   else:
+ #       res = "sono stupida"
+ #   print(res)
+
+
+def chat(message):
     ints = predict_class(message)
     if len(ints) != 0:
         res = get_response(ints, intents)
     else:
-        res = "sono stupida"
-    print(res)
+        res = "sonon stupida"
+    return res
