@@ -79,12 +79,13 @@ model = Sequential()
 #128 è il numero di neuroni dello strato
 #Relu restituisce il valore se l'input è positivo
 #input shape è la dimensione dell'input
-model.add(Dense(128, input_shape=(len(train_x[0]),), activation='relu'))
+model.add(Dense(1024, input_shape=(len(train_x[0]),), activation='relu'))
 #Dropout serve per evitare l'overfitting
 model.add(Dropout(0.5))
 #secondo layer con meno neuroni per generalizzare
-model.add(Dense(64, activation='relu'))
+model.add(Dense(512, activation='relu'))
 model.add(Dropout(0.5))
+
 #softmax converte il vettore di output in un vettore di probabilità relativa di ogni classe
 model.add(Dense(len(train_y[0]), activation='softmax'))
 #learning_rate -> quanto cambia il peso ad ogni iterazione

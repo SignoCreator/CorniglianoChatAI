@@ -10,6 +10,5 @@ CORS(app)
 def getResponse(message):
     return chat(message)
 
-
 if __name__ == "__main__":
     app.run()

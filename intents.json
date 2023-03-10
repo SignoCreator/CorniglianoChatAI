@@ -135,6 +135,19 @@
         "Posso darti qualche consiglio o suggerimento"
       ]
     },
+      {
+      "tag": "ringraziamenti",
+      "patterns": [
+        "grazie",
+        "grazie mille",
+        "ti ringrazio",
+        "è stato utile",
+        "ottimo servizio"
+      ],
+      "responses": [
+        "Grazie a te! Siamo felici di esserti stati utili e di averti fornito tutte le informazioni di cui avevi bisogno."
+      ]
+    },
     {
       "tag": "domandeCortesia",
       "patterns": [
@@ -150,36 +163,150 @@
       ]
     },
     {
+      "tag": "come guadagno punti",
+      "patterns": [
+        "come guadagno punti",
+        "come guadagno cornicoin",
+        "come posso ricevere punti",
+        "c'è un modo per guadagnare punti",
+        "si possono guadagnare dei punti"
+      ],
+      "responses": [
+        "Per guadagnare cornicoin recati in un negozio associato e esegui un acquisto",
+        "per guadagnare punti devi fare compere all'interno dei negozi associati."
+      ]
+    },
+    {
+      "tag": "altri modi per guadagnare punti",
+      "patterns": [
+        "ci sono altri modi per guadagnare punti",
+        "quali modi ci sono per guadagnare cornicoin",
+        "ci sono altri metodi per guadagnare cornicoin",
+        "ci sono altri modi per ricevere cornicoin",
+        "come posso guadagnare punti in altri modi",
+        "quali sono i modi per guadagnare punti"
+      ],
+      "responses": [
+        "l'unico modo per guadagnare cornicoin è fare acquisti all'interno di negozi associati",
+        "c'è solo un metodo per ricevere cornicoin, ovvero acquistare prodotti all'interno di negozi associati"
+      ]
+    },
+    {
+      "tag": "quanto vale un punto",
+      "patterns": [
+        "quanto vale un punto",
+        "qual è il valore di un punto",
+        "quanto vale un cornicoin",
+        "qual è il valore di un punto",
+        "qual è il valore di un cornicoin",
+        "quanto valgono 10€ di spesa"
+      ],
+      "responses": [
+        "un punto equivale ad un euro",
+        "un cornicoin equivale ad un euro",
+        "un euro speso equivale ad un cornicoin"
+      ]
+    },
+    {
+      "tag": "divisibilità punti",
+      "patterns": [
+        "posso avere punti decimali",
+        "possono i punti essere decimali",
+        "possono i cornicoin essere decimali",
+        "i cornicoin possono essere anche con la virgola",
+        "posso avere 10,2 punti",
+        "i punti possono anche essere frazionati"
+      ],
+      "responses": [
+        "i punti possono solo essere interi, ovvero non hanno numeri decimali",
+        "i cornicoin sono sempre interi, non puoi avere cornicoin con la virgola"
+      ]
+    },
+    {
+      "tag": "spesa minima",
+      "patterns": [
+        "c'è una spesa minima da eseguire",
+        "qual è la spesa minima",
+        "qual è l'importo minimo"
+      ],
+      "responses": [
+        "l'importo minimo per guadagnare punti è 1 euro",
+        "1 euro è la spesa minima"
+      ]
+    },
+    {
+      "tag": "approssimazione",
+      "patterns": [
+        "se spendo 10 euro e 60 centesimi, quanti punti guadagno",
+        "se spendo 20,3 euro quanti punti guadagno",
+        "i punti vengono approssimati per difetto o eccesso",
+        "come vengono approssimati i punti"
+      ],
+      "responses": [
+        "i punti vengono approssimati per difetto (0,9 euro = 0 punti)",
+        "viene assegnato ogni punti per ogni euro effettivo speso"
+      ]
+    },
+    {
+      "tag": "punti negativi",
+      "patterns": [
+        "possono essere negativi i punti",
+        "posso avere punti negativi",
+        "posso essere in negativo con i cornicoin",
+        "posso avere cornicoin negativi"
+      ],
+      "responses": [
+        "i cornicoin non possono essere negativi",
+        "i punti non possono essere negativi",
+        "i cornicoin non possono scendere sotto lo zero"
+      ]
+    },
+    {
       "tag": "che cosa sono i punti",
       "patterns": [
-        "Come faccio a usare i miei punti",
+        "Che cosa sono i punti",
+        "Che cosa sono i cornicoin",
         "Cosa rappresentano i punti",
         "Di cosa si tratta quando si parla di punti",
         "Quali sono le funzionalità dei punti",
         "Cosa si intende per punti",
+        "Qual è lo scopo dei cornicoin",
         "Qual è lo scopo dei punti",
         "Che cosa rappresentano i punti nel sistema",
         "Che cos'è un punto in questa applicazione",
-        "Come vengono utilizzati i punti",
-        "Quali benefici posso ottenere dai punti",
         "Come posso utilizzare i punti",
         "Come vengono assegnati i punti",
-        "Quali sono i limiti dei punti",
-        "Possono i punti scadere",
         "Cosa posso fare con i miei punti"
       ],
       "responses": [
-        "I punti, chiamati 'cornicoin', permettono di riscattare dei premi al raggiungimento di una soglia. Ogni acquisto all'interno di un negozio associato garantisce una corrispondenza in punti. Ogni euro di spesa equivale ad un cornicoin. "
+        "I punti, chiamati 'cornicoin', permettono di riscattare dei premi al raggiungimento di una soglia. "
+      ]
+    },
+    {
+      "tag": "come utilizzare i punti",
+      "patterns": [
+        "Come faccio ad usare i miei cornicoin",
+        "Come faccio a usare i miei punti",
+        "Come vengono utilizzati i punti",
+        "Quali benefici posso ottenere dai punti"
+      ],
+      "responses": [
+        "per utilizzare i punti recati nella sezione premi cliccando sulla voce del menu corrispondente.",
+        "per utilizzare i cornicoin clicca sul bottone award nel menu",
+        "puoi utilizzare i punti per riscattare dei premi",
+        "puoi riscattare dei premi con i tuoi cornicoin nella sezione premi"
       ]
     },
     {
       "tag": "scandenza punti",
       "patterns": [
         "dopo quanto scadono i punti",
+        "Quali sono i limiti dei punti",
         "scadono i punti",
         "hanno una scadenza i punti",
         "hanno una scadenza i cornicoin",
-        "c'è un limite di tempo per usare i punti"
+        "c'è un limite di tempo per usare i punti",
+        "Possono i cornicoin scadere"
       ],
       "responses": [
         "non c'è un limite di tempo per utilizzare i cornicoin",
@@ -229,10 +356,31 @@
       ],
       "responses": [
         "Puoi trovare i premi che sono riscattabili nella sezione premi del menu.",
-        "La sezione premi del menu è dove puoi trovare i premi che puoi riscattare.",
         "Troverai i premi che possono essere riscattati nella sezione premi del menu.",
         "Nella sezione premi del menu sono presenti i premi che puoi riscattare.",
         "I premi riscattabili sono elencati nella sezione premi del menu."
+      ]
+    },
+    {
+      "tag": "premi riscattabili",
+      "patterns": [
+        "quanti premi posso riscattare",
+        "quanti oggetti posso riscattare",
+        "quanti sono i premi che posso prendere"
+      ],
+      "responses": [
+        "non c'è un limite di premi riscattabili",
+        "puoi riscattare quanti premi vuoi",
+        "puoi riscattare quanti premi desideri"
+      ]
+    },
+    {
+      "tag": "costo premio",
+      "patterns": [
+        "quanto costa un premio"
+      ],
+      "responses": [
+        "ci sono diversi premi, ognuno ha un prezzo differente"
       ]
     },
     {
@@ -256,6 +404,7 @@
       "tag": "che cos'è",
       "patterns": [
         "che cos'è",
+        "parlami di questa applicazione",
         "che cos'è questa app",
         "a cosa serve questa app",
         "qual è lo scopo di questa app",
@@ -263,11 +412,15 @@
         "come funziona questa app",
         "che scopo ha",
         "parlami dell'app",
-        "spiegami a cosa serve l'app"
+        "spiegami a cosa serve l'app",
+        "cosa posso fare con questa app",
+        "a cosa mi serve questa applicazione",
+        "è utile questa app"
       ],
       "responses": [
         "Questa app serve per guadagnare punti e riscattare premi. È stata sviluppata per promuovere le piccole aziende di Cornigliano.",
-        "questa applicazione permette di guadagnare punti facendo la spesa nei piccoli negozi di cornigliano associati al CIV. Grazie a questi punti puoi riscattare dei premi creati dalla scuola Alessandro Volta!"
+        "questa applicazione permette di guadagnare punti facendo la spesa nei piccoli negozi di cornigliano associati al CIV. Grazie a questi punti puoi riscattare dei premi creati dalla scuola Alessandro Volta!",
+        "questa app permette di accumulare punti guadagnati con acquisti all'interno dei negozi associati al CIV di Cornigliano. Grazie a questi punti potrai riscattare premi"
       ]
     },
     {
@@ -318,6 +471,32 @@
       ]
     },
     {
+      "tag": "funzionamento",
+      "patterns": [
+        "Come funziona l'app",
+        "Come si usa l'app",
+        "Qual è il funzionamento dell'app",
+        "Quali sono i passaggi necessari per utilizzare l'app",
+        "Che cosa devo fare per utilizzare l'app",
+        "Quali sono le istruzioni per usare l'app",
+        "In cosa consiste l'utilizzo dell'app",
+        "Come posso utilizzare l'app",
+        "Come è strutturata l'app e come posso utilizzarla",
+        "Quali sono le funzioni disponibili nell'app",
+        "Cosa devo sapere per utilizzare l'app",
+        "Come si può interagire con l'app",
+        "Come si può accedere alle diverse funzioni dell'app",
+        "Che cosa offre l'app e come posso utilizzare queste funzionalità"
+      ],
+      "responses": [
+        "Per utilizzare l'app, devi prima aprire l'applicazione sul tuo cellulare. Dovrai poi registrarti utilizzando la tua email e una password personale. Una volta effettuata la registrazione, premi il pulsante verde rotondo in basso al centro dell'app. Successivamente, dovrai inserire l'importo in euro e scannerizzare il codice QR del negoziante. Una volta fatto questo, i punti saranno accreditati sul tuo conto.",
+        "Per utilizzare l'app, devi aprirla sul tuo cellulare e procedere con la registrazione utilizzando i tuoi dati personali. Dopodiché, premi sul pulsante verde rotondo in basso al centro dell'app e inserisci l'importo in euro che vuoi utilizzare. Infine, scannerizza il codice QR del negoziante per ricevere i punti sul tuo conto.",
+        "Per utilizzare l'app, devi prima aprire l'applicazione sul tuo cellulare e registrarti utilizzando la tua email e una password personale. Dopo la registrazione, fai clic sul pulsante verde rotondo in basso al centro dell'app, inserisci l'importo in euro e scannerizza il codice QR del negoziante. Infine, i tuoi punti saranno accreditati sul tuo conto.",
+        "Per utilizzare l'app, devi aprire l'applicazione sul tuo cellulare e registrarti utilizzando i tuoi dati personali. Dopo la registrazione, fai clic sul pulsante verde rotondo in basso al centro dell'app e inserisci l'importo in euro. A questo punto, scannerizza il codice QR del negoziante e i tuoi punti saranno accreditati sul tuo conto.",
+        "Per utilizzare l'app, è necessario aprirla sul proprio cellulare e procedere con la registrazione inserendo i propri dati personali. Una volta registrati, fare clic sul pulsante verde rotondo in basso al centro dell'app, quindi inserire l'importo in euro e scannerizzare il codice QR del negoziante. Infine, i punti saranno accreditati sul conto dell'utente."
+      ]
+    },
+    {
       "tag": "creazione idea",
       "patterns": [
         "da chi è partita l'idea",
@@ -340,7 +519,7 @@
         "chi è il creatore di sigbot"
       ],
       "responses":[
-        "il creatore di questa chat funzionante con Intelligenza Artificiale Ristretta è stata creata da quel mostro di Signorastri e il suo compagno Calderaro",
+        "i creatori di questa chat funzionante con Intelligenza Artificiale Ristretta sono Signorastri Diego e il suo compagno Calderaro Stefano",
         "Diego Signorastri e Calderaro Stefano hanno sviluppato questa chat utilizzando tecniche che si possono apprendere all'istituto informatico Italo Calvino di Genova Sestri"
       ]
     },
@@ -358,7 +537,8 @@
         "Come posso registrarmi su questa applicazione",
         "Quali dati devo inserire per creare un account",
         "Come si può accedere alla pagina di registrazione",
-        "Come posso creare un account se sono un nuovo utente"
+        "Come posso creare un account se sono un nuovo utente",
+        "come mi registro"
       ],
       "responses": [
         "Per effettuare la registrazione, basta inserire la tua email e password nell'applicazione.",
@@ -426,30 +606,33 @@
         "nella pagina login quando viene aperta l'app c'è un pulsante con l'icona apple"
       ]
     },
-    {
-      "tag": "funzionamento",
+     {
+      "tag": "password dimenticata",
       "patterns": [
-        "Come funziona l'app",
-        "Come si usa l'app",
-        "Qual è il funzionamento dell'app",
-        "Quali sono i passaggi necessari per utilizzare l'app",
-        "Che cosa devo fare per utilizzare l'app",
-        "Quali sono le istruzioni per usare l'app",
-        "In cosa consiste l'utilizzo dell'app",
-        "Come posso utilizzare l'app",
-        "Come è strutturata l'app e come posso utilizzarla",
-        "Quali sono le funzioni disponibili nell'app",
-        "Cosa devo sapere per utilizzare l'app",
-        "Come si può interagire con l'app",
-        "Come si può accedere alle diverse funzioni dell'app",
-        "Che cosa offre l'app e come posso utilizzare queste funzionalità"
+        "ho dimenticato la password",
+        "non mi ricordo la password",
+        "come recupero la mia password",
+        "ho scordato la password come faccio a recuperarla",
+        "come si recupera la propria password",
+        "ho smarrito la password",
+        "non ricordo la mia password"
       ],
       "responses": [
-        "Per utilizzare l'app, devi prima aprire l'applicazione sul tuo cellulare. Dovrai poi registrarti utilizzando la tua email e una password personale. Una volta effettuata la registrazione, premi il pulsante verde rotondo in basso al centro dell'app. Successivamente, dovrai inserire l'importo in euro e scannerizzare il codice QR del negoziante. Una volta fatto questo, i punti saranno accreditati sul tuo conto.",
-        "Per utilizzare l'app, devi aprirla sul tuo cellulare e procedere con la registrazione utilizzando i tuoi dati personali. Dopodiché, premi sul pulsante verde rotondo in basso al centro dell'app e inserisci l'importo in euro che vuoi utilizzare. Infine, scannerizza il codice QR del negoziante per ricevere i punti sul tuo conto.",
-        "Per utilizzare l'app, devi prima aprire l'applicazione sul tuo cellulare e registrarti utilizzando la tua email e una password personale. Dopo la registrazione, fai clic sul pulsante verde rotondo in basso al centro dell'app, inserisci l'importo in euro e scannerizza il codice QR del negoziante. Infine, i tuoi punti saranno accreditati sul tuo conto.",
-        "Per utilizzare l'app, devi aprire l'applicazione sul tuo cellulare e registrarti utilizzando i tuoi dati personali. Dopo la registrazione, fai clic sul pulsante verde rotondo in basso al centro dell'app e inserisci l'importo in euro. A questo punto, scannerizza il codice QR del negoziante e i tuoi punti saranno accreditati sul tuo conto.",
-        "Per utilizzare l'app, è necessario aprirla sul proprio cellulare e procedere con la registrazione inserendo i propri dati personali. Una volta registrati, fare clic sul pulsante verde rotondo in basso al centro dell'app, quindi inserire l'importo in euro e scannerizzare il codice QR del negoziante. Infine, i punti saranno accreditati sul conto dell'utente."
+        "se hai dimenticato la password non ti preoccupare, puoi richiedere di cambiarla inserendo la mail con cui hai acceduto nella sezione del login 'password dimenticata'. Ad essa verrà inviato un link per cambiare la propria password",
+        "puoi richiedere di cambiarla inserendo la mail con cui hai acceduto. Ad essa verrà inviato un link per cambiare la propria password",
+        "la password è recuperabile tramite la propria email. Cliccando nel login su 'password dimenticata' verrà chiesto di inserire la propria email a cui verrà inviato il link di cambio password"
+      ]
+    },
+     {
+      "tag": "modifica password",
+      "patterns": [
+        "voglio modificare la password",
+        "come posso modificare la password",
+        "come modifico la password",
+        "si può modificare la passoword"
+      ],
+      "responses": [
+       "per modificare la password recati nelle impostazioni > dati personali"
       ]
     },
     {
@@ -483,6 +666,31 @@
       ]
     },
     {
+      "tag": "aggiunta negozio",
+      "patterns": [
+        "posso mettere il mio negozio nell'app",
+        "posso aggiungere la mia attività all'app",
+        "posso aggiungere il mio negozio all'interno dell'applicazione",
+        "si può aggiungere un negozio all'app"
+      ],
+      "responses": [
+        "per aggiungere un negozio all'app devi contattare il CIV di cornigliano",
+        "è possibile richiedere l'aggiunta di un negozio al CIV di cornigliano"
+      ]
+    },
+    {
+      "tag": "negozi con parità di importanza",
+      "patterns": [
+        "ci sono dei negozi che danno più punti",
+        "quali negozi valgono di più",
+        "i negozi danno sempre gli stessi punti"
+      ],
+      "responses": [
+        "non ci sono differenze di assegnazione di punti tra negozi",
+        "ogni negozio è pari agli altri"
+      ]
+    },
+    {
       "tag": "premi",
       "patterns": [
         "premi",
@@ -499,6 +707,31 @@
       ]
     },
     {
+      "tag": "consegna premi",
+      "patterns": [
+        "i premi dove arrivano",
+        "dove ricevo i premi",
+        "dove posso andare a prendere il mio premio",
+        "posso fare spedire il mio premio a casa"
+      ],
+      "responses": [
+        "i premi verranno consegnati alla scuola A. Volta di Cornigliano, recati in esso per ricevere il premio",
+        "puoi andare a prendere il tuo premio alla scuola A. Volta di Cornigliano"
+      ]
+    },
+    {
+      "tag": "tempo consegna",
+      "patterns": [
+        "quanto tempo devo aspettare per ricevere il premio",
+        "quanto ci vuole per ricevere il premio",
+        "quando arriva il mio premio"
+      ],
+      "responses": [
+        "per ricevere il premio non dovrai aspettare nessun giorno",
+        "il premio è disponibile fin da subito alla scuola A. Volta"
+      ]
+    },
+    {
       "tag": "contatti",
       "patterns": [
         "contatti",
@@ -509,22 +742,11 @@
         "dove posso trovare supporto"
       ],
       "responses": [
-        "Per qualsiasi problema o dubbio sull'utilizzo dell'app, puoi contattare l'assistenza attraverso l'indirizzo email: assistenza@cornigliapp.it."
+        "Per qualsiasi problema o dubbio sull'utilizzo dell'app, puoi contattare l'assistenza attraverso l'indirizzo email: assistenza@cornigliapp.it.",
+        "nessun problema, contatta l'assistenza all'email assistenza@cornigliapp.it"
       ]
     },
-    {
-      "tag": "ringraziamenti",
-      "patterns": [
-        "grazie",
-        "grazie mille",
-        "ti ringrazio",
-        "è stato utile",
-        "ottimo servizio"
-      ],
-      "responses": [
-        "Grazie a te! Siamo felici di esserti stati utili e di averti fornito tutte le informazioni di cui avevi bisogno."
-      ]
-    },
+
     {
       "tag": "impostazioni",
       "patterns": [
@@ -542,20 +764,18 @@
       ]
     },
     {
-      "tag": "password dimenticata",
+      "tag": "transazioni/acquisti",
       "patterns": [
-        "ho dimenticato la password",
-        "non mi ricordo la password",
-        "come recupero la mia password",
-        "ho scordato la password come faccio a recuperarla",
-        "come si recupera la propria password",
-        "ho smarrito la password",
-        "non ricordo la mia password"
+        "come visualizzo le transazioni",
+        "come visualizzo le mie spese",
+        "come visualizzo i miei acquisti",
+        "come vedo le mie transazioni",
+        "si possono vedere gli acquisti effettuati"
       ],
       "responses": [
-        "se hai dimenticato la password non ti preoccupare, puoi richiedere di cambiarla inserendo la mail con cui hai acceduto nella sezione del login 'password dimenticata'. Ad essa verrà inviato un link per cambiare la propria password",
-        "puoi richiedere di cambiarla inserendo la mail con cui hai acceduto. Ad essa verrà inviato un link per cambiare la propria password",
-        "la password è recuperabile tramite la propria email. Cliccando nel login su 'password dimenticata' verrà chiesto di inserire la propria email a cui verrà inviato il link di cambio password"
+        "per visualizzare le transazioni puoi recarti nella sezione transazioni cliccando nella corrispettiva voce del menu",
+        "per visualizzare le tue spese puoi recarti nella sezione transazioni cliccando nella corrispettiva voce del menu",
+        "per visualizzare i tuoi acquisti puoi recarti nella sezione transazioni cliccando nella corrispettiva voce del menu"
       ]
     },
     {
@@ -596,11 +816,12 @@
         "esiste una mappa dei negozi",
         "dove si trova la mappa dei negozi",
         "c'è una mappa di google maps con i negozi",
-        "dove posso cercare dove si trovano i negozi"
+        "dove posso cercare dove si trovano i negozi",
+        "come faccio a sapere se un negozio aderisce o meno"
       ],
       "responses": [
-        "per consultare la mappa dei negozi schiaccia sull'icona [TODO AGGIUNGI LA POSIZIONE DELL'ICONA] oppure sul sito web www.corni.com/maps",
-        "la mappa dei negozi è disponibile nella sezione x oppure sul sito web www.corni.com/maps"
+        "per consultare la mappa dei negozi aderenti schiaccia sull'icona [TODO AGGIUNGI LA POSIZIONE DELL'ICONA] oppure sul sito web www.corni.com/maps",
+        "la mappa dei negozi aderenti è disponibile nella sezione x oppure sul sito web www.corni.com/maps"
       ]
     },
     {
@@ -644,7 +865,21 @@
       ]
     },
     {
-      "tag": "il nome della AI",
+      "tag": "memoria insufficiente",
+      "patterns": [
+        "non ho abbastanza memoria",
+        "non ho spazio sul cellulare",
+        "non ho spazio nel telefono",
+        "non ho memoria come faccio"
+      ],
+      "responses": [
+        "l'applicazione utilizza circa 16 MB di memoria, purtoppo deve essere disponibile questo spazio sul cellulare per poter installare l'app",
+        "servono circa 16 MB disponibili per installare l'app"
+      ]
+    },
+
+    {
+      "tag": "il nome della ai",
       "patterns": [
         "come ti chiami",
         "qual è il tuo nome",
@@ -656,7 +891,23 @@
         "mi chiamo sigbot",
         "mi chiamano sigbot",
         "i miei creatori mi hanno chiamato sigbot",
-        "il nome di questa chat AI è sigbot"
+        "il nome di questa chat ai è sigbot"
+      ]
+    },
+    {
+      "tag": "devo essere di cornigliano",
+      "patterns": [
+        "devo essere di cornigliano per usare l'app",
+        "devo risiedere a cornigliano per usare l'app",
+        "devo avere la cittadinanza per usare l'app",
+        "devo vivere a cornigliano per usare l'app",
+        "devo essere nato a cornigliano per usare l'app",
+        "possono usare l'app anche gli extracomunitari"
+      ],
+      "responses": [
+        "per utilizzare l'app non ci sono restrizioni di alcun tipo",
+        "non devi necessariamente risiedere a cornigliano per usare l'app",
+        "non devi necessariamente vivere a cornigliano per usare l'app"
       ]
     }
   ]

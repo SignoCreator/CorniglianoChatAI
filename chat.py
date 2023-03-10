@@ -54,7 +54,7 @@ def predict_class(sentence):
     # predizione
     res = model.predict(np.array([bow]))[0]
     # soglia per cui non prendo le classi
-    ERROR_THRESHOLD = 0.90
+    ERROR_THRESHOLD = 0.50
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
 
     # ordino in base alla probabilità
@@ -79,13 +79,15 @@ def get_response(intents_list, intents_json):
     return result
 
 
-
-  #  ints = predict_class(message)
- #   if len(ints) != 0:
- #       res = get_response(ints, intents)
- #   else:
- #       res = "sono stupida"
- #   print(res)
+if __name__ == "__main__":
+    while True:
+        ints = predict_class(input("<tu>"))
+        print(ints)
+        if len(ints) != 0:
+            res = get_response(ints, intents)
+        else:
+            res = "scusami, non sono in grado di darti una risposta che possa essere soddisfacente, prova a riformula la domanda oppure contatta i miei creatori."
+        print("<sigbot>"+res)
 
 
 def chat(message):
@@ -93,10 +95,7 @@ def chat(message):
     if len(ints) != 0:
         res = get_response(ints, intents)
     else:
-<<<<<<< HEAD
-        res = "sonon stupida"
-    return res
-=======
+
         res = "scusami, non sono in grado di darti una risposta che possa essere soddisfacente, prova a riformula la domanda oppure contatta i miei creatori."
-    print(printer.green+"<sigbot>"+printer.reset + res)
->>>>>>> a3fd712e0ff81b39becb9d9284400898aa5e2da1
+    return res
+
