@@ -1,13 +1,16 @@
+# -*- coding: utf-8 -*-
 import random
 import json
 import pickle
 import numpy as np
-import re
 import nltk
+
 from nltk.stem import WordNetLemmatizer
 
 from tensorflow.keras.models import load_model
-from nltk.corpus import wordnet
+
+nltk.download('punkt')
+nltk.download('wordnet')
 
 
 class printer:
@@ -81,6 +84,7 @@ def get_response(intents_list, intents_json):
 
 if __name__ == "__main__":
     while True:
+
         ints = predict_class(input("<tu>"))
         print(ints)
         if len(ints) != 0:
@@ -90,12 +94,18 @@ if __name__ == "__main__":
         print("<sigbot>"+res)
 
 
+
 def chat(message):
     ints = predict_class(message)
     if len(ints) != 0:
         res = get_response(ints, intents)
     else:
+<<<<<<< HEAD
 
         res = "scusami, non sono in grado di darti una risposta che possa essere soddisfacente, prova a riformula la domanda oppure contatta i miei creatori."
     return res
 
+=======
+        res = "sonon stupida"
+    return res
+>>>>>>> f7e869b3ec0745803aa9bf88308cd3a76e6d57c3
