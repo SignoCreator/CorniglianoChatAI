@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  chatai:
+    build: .
+    ports:
+     - "5001:5000"
+    restart: always
