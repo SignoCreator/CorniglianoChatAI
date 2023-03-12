@@ -100,12 +100,6 @@ def chat(message):
     if len(ints) != 0:
         res = get_response(ints, intents)
     else:
-<<<<<<< HEAD
-
         res = "scusami, non sono in grado di darti una risposta che possa essere soddisfacente, prova a riformula la domanda oppure contatta i miei creatori."
     return res
 
-=======
-        res = "sonon stupida"
-    return res
->>>>>>> f7e869b3ec0745803aa9bf88308cd3a76e6d57c3
