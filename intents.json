@@ -490,7 +490,7 @@
       ],
       "responses": [
         "Per utilizzare l'app, devi prima aprire l'applicazione sul tuo cellulare. Dovrai poi registrarti utilizzando la tua email e una password personale. Una volta effettuata la registrazione, premi il pulsante verde rotondo in basso al centro dell'app. Successivamente, dovrai inserire l'importo in euro e scannerizzare il codice QR del negoziante. Una volta fatto questo, i punti saranno accreditati sul tuo conto.",
-        "Per utilizzare l'app, devi aprirla sul tuo cellulare e procedere con la registrazione utilizzando i tuoi dati personali. Dopodiché, premi sul pulsante verde rotondo in basso al centro dell'app e inserisci l'importo in euro che vuoi utilizzare. Infine, scannerizza il codice QR del negoziante per ricevere i punti sul tuo conto.",
+        "Per utilizzare l'app, devi aprirla sul tuo cellulare e procedere con la registrazione utilizzando i tuoi dati personali. Dopodiché, premi sul pulsante verde rotondo in basso al centro dell'app e inserisci l'importo in euro che stai spendendo. Infine, scannerizza il codice QR del negoziante per ricevere i punti sul tuo conto.",
         "Per utilizzare l'app, devi prima aprire l'applicazione sul tuo cellulare e registrarti utilizzando la tua email e una password personale. Dopo la registrazione, fai clic sul pulsante verde rotondo in basso al centro dell'app, inserisci l'importo in euro e scannerizza il codice QR del negoziante. Infine, i tuoi punti saranno accreditati sul tuo conto.",
         "Per utilizzare l'app, devi aprire l'applicazione sul tuo cellulare e registrarti utilizzando i tuoi dati personali. Dopo la registrazione, fai clic sul pulsante verde rotondo in basso al centro dell'app e inserisci l'importo in euro. A questo punto, scannerizza il codice QR del negoziante e i tuoi punti saranno accreditati sul tuo conto.",
         "Per utilizzare l'app, è necessario aprirla sul proprio cellulare e procedere con la registrazione inserendo i propri dati personali. Una volta registrati, fare clic sul pulsante verde rotondo in basso al centro dell'app, quindi inserire l'importo in euro e scannerizzare il codice QR del negoziante. Infine, i punti saranno accreditati sul conto dell'utente."
@@ -742,8 +742,8 @@
         "dove posso trovare supporto"
       ],
       "responses": [
-        "Per qualsiasi problema o dubbio sull'utilizzo dell'app, puoi contattare l'assistenza attraverso l'indirizzo email: assistenza@cornigliapp.it.",
-        "nessun problema, contatta l'assistenza all'email assistenza@cornigliapp.it"
+        "Per qualsiasi problema o dubbio sull'utilizzo dell'app, puoi contattare l'assistenza attraverso l'indirizzo email: steficalde@gmail.",
+        "nessun problema, contatta l'assistenza all'email steficalde@gmail.com"
       ]
     },
 
@@ -809,6 +809,26 @@
       ]
     },
     {
+      "tag": "cos'è il civ",
+      "patterns": [
+        "cosa è il civ",
+        "che cosa vuol dire civ",
+        "cosa intendi per civ",
+        "cosa è un civ",
+        "cos'è il consorzio commercianti cornigliano",
+        "cosa vuol dire far parte del civ",
+        "dove si trova il civ"
+      ],
+      "responses": [
+    "Il CIV, consorzio dei commercianti di Cornigliano, si impegna a valorizzare gli elementi storici e architettonici del quartiere e a promuovere numerose iniziative per il territorio.",
+    "Il CIV, consorzio dei commercianti di Cornigliano, si adopera per la riqualificazione degli elementi storici e architettonici del quartiere e per la realizzazione di molte iniziative a favore della comunità.",
+    "Il CIV, consorzio dei commercianti di Cornigliano, si dedica alla valorizzazione degli elementi storici e architettonici del quartiere e alla promozione di numerose iniziative per il territorio.",
+    "Il CIV, consorzio dei commercianti di Cornigliano, si impegna a preservare gli elementi storici e architettonici del quartiere e a realizzare molte iniziative per il territorio.",
+    "Il CIV, consorzio dei commercianti di Cornigliano, si adopera per la salvaguardia degli elementi storici e architettonici del quartiere e per la realizzazione di molte iniziative a favore della comunità."
+]
+
+    },
+    {
       "tag": "mappa dei negozi",
       "patterns": [
         "come vedo la mappa dei negozi",
@@ -820,8 +840,8 @@
         "come faccio a sapere se un negozio aderisce o meno"
       ],
       "responses": [
-        "per consultare la mappa dei negozi aderenti schiaccia sull'icona [TODO AGGIUNGI LA POSIZIONE DELL'ICONA] oppure sul sito web www.corni.com/maps",
-        "la mappa dei negozi aderenti è disponibile nella sezione x oppure sul sito web www.corni.com/maps"
+        "per consultare la mappa dei negozi aderenti schiaccia sull'icona [TODO AGGIUNGI LA POSIZIONE DELL'ICONA] oppure sul sito web www.hugstore.it/maps",
+        "la mappa dei negozi aderenti è disponibile nella sezione negozi oppure sul sito web www.hugstore.it/maps"
       ]
     },
     {
@@ -860,7 +880,7 @@
         "come si scarica l'applicazione"
       ],
       "responses": [
-        "l'app è disponibile su ogni dispositivo. Clicca il link sul sito web www.CorniCoin.com per installarla oppure fallo direttamente dal App store o Google Play Store",
+        "l'app è disponibile su ogni dispositivo. Clicca il link sul sito web www.hugstore.it per installarla oppure fallo direttamente dal App store o Google Play Store",
         "l'app è disponibile su ogni dispositivo su App store o Google Play Store oppure cliccando il link sul sito web www.CorniCoin.com"
       ]
     },
