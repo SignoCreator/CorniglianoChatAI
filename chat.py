@@ -9,7 +9,7 @@ from nltk.stem import WordNetLemmatizer
 
 from tensorflow.keras.models import load_model
 
-nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('wordnet')
 
 

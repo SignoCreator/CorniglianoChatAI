@@ -1,0 +1,3 @@
+# The trained model is a TensorFlow SavedModel; keep it out of GitHub's language stats
+chatbot_model.model/** linguist-generated
+*.pkl linguist-generated

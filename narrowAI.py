@@ -5,7 +5,7 @@ import numpy as np
 import nltk
 from nltk.stem import WordNetLemmatizer
 
-nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('wordnet')
 
 from tensorflow.keras.models import Sequential
@@ -103,5 +103,5 @@ model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy
 # le epoche sono il numero di volte che addestro il modello
 # il batch_size dice su quanti campioni viene addestrata una batch prima di cambiare il peso
 hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
-model.save('chatbot_model.model', hist)
+model.save('chatbot_model.model')
 print("Done")
